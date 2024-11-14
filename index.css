@@ -1,0 +1,76 @@
+* {
+  box-sizing: border-box;
+}
+/* Button container styling */
+.expandable-button {
+  position: fixed;
+  bottom: 20px; /* Offset from the bottom */
+  right: 10px; /* Offset from the right */
+  width: 50px; /* Default width */
+  height: 50px;
+  background-color: #333; /* Default color */
+  color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  font-size: 18px;
+  font-weight: bold;
+  border-radius: 25px;
+  cursor: pointer;
+  transition: width 1s ease, background-color 1s ease;
+}
+
+span.expanded {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 50px; /* Default width */
+  height: 50px;
+}
+
+/* Hover effect to expand and change appearance */
+.expandable-button:hover {
+  width: 200px;
+  background-color: red;
+  border-radius: 25px; /* Keep it rounded */
+}
+
+/* Icon image styling */
+.expandable-button img {
+  position: fixed;
+  bottom: 30px; /* Offset from the bottom */
+  right: 15px; /* Offset from the right */
+  width: 30px; /* Icon size */
+  height: 30px;
+  transition: opacity 1s ease;
+}
+
+/* Text styles */
+.expandable-button span {
+  transition: opacity 0.3s ease;
+}
+.expandable-button:hover img {
+  opacity: 0; /* Hide icon on hover */
+}
+.expandable-button span.expanded {
+  opacity: 0; /* Hidden by default */
+}
+.expandable-button:hover span.expanded {
+  opacity: 1; /* Show 'Record' on hover */
+}
+
+#record {
+  margin: auto;
+  width: 100%;
+  border-collapse: collapse; /* Ensures borders are not doubled */
+}
+th,
+td {
+  border: 1px solid #000; /* Adds a border to each cell */
+  padding: 8px;
+  text-align: left;
+}
+th {
+  background-color: #f2f2f2; /* Optional: Adds a background color to headers */
+}

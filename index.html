@@ -1,0 +1,55 @@
+<!--
+111550171 李湧安 第4次作業 11/17
+111550171 Li Yung An The Fourth Homework 11/17
+-->
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>HW4_111550171_李湧安</title>
+    <link href="index.css" rel="stylesheet" />
+  </head>
+  <body>
+    <p id="betchip">bet chip:0</p>
+    <div id="dealer">
+      <p class="card"></p>
+      <p class="point">point:</p>
+    </div>
+    <div id="player">
+      <p class="chips">remain: 1000</p>
+      <p class="card"></p>
+      <p class="point">point:</p>
+    </div>
+
+    <button id="Assign100">Assign chip x 100</button>
+    <button id="Assign500">Assign chip x 500</button>
+    <button id="Assign1000">Assign chip x 1000</button>
+    <button id="AssignAll">Assign chip x All In</button>
+    <button id="startgame">Game Start</button>
+    <button id="Hit">Hit</button>
+    <button id="Stand">Stand</button>
+    <button id="Signal100">Signal</button>
+
+    <button id="nextRound">Next Round</button>
+
+    <!-- Button element -->
+    <div class="expandable-button">
+      <img src="images/record.png" alt="Record Icon" />
+      <span class="expanded">Record</span>
+    </div>
+
+    <h1>Game Record</h1>
+
+    <table id="record">
+      <tr>
+        <th>player's card</th>
+        <th>dealer's card</th>
+        <th>bet</th>
+        <th>status</th>
+      </tr>
+    </table>
+
+    <script src="index.js"></script>
+  </body>
+</html>
